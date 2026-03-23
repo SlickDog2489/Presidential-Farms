@@ -1,0 +1,189 @@
+<!Doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Presidential Farm | Dashboard</title>
+		<link
+			rel="stylesheet"
+			href="dash-board.css" />
+	</head>
+	<body>
+		<div class="dashboard-container">
+			<aside>
+				<a
+					href="/class/mini project/Farm/idex.html"
+					class="logo"
+					>Presidential Farm</a
+				>
+				<nav class="nav-menu">
+					<a href="/class/mini project/dashboard/board.html">Farm Overview</a>
+					<a href="/class/mini project/dashboard/in dash/Equipment.html">Equipments</a>
+					<a href="/class/mini project/dashboard/in dash/crop-produce.html">Crop Produce</a>
+					<a href="#">Inventory</a>
+				</nav>
+			</aside>
+			<header>
+				<div class="search-area">
+					<input
+						type="text"
+						placeholder="Search farm resources..." />
+				</div>
+				<div class="user-info">
+					<div style="text-align: right">
+						<p style="font-weight: bold; font-size: 0.9rem">Mr / Farmer Peter.J</p>
+						<p style="font-size: 0.75rem; color: var(--text-muted)">
+							Owner / Manager
+						</p>
+					</div>
+				</div>
+			</header>
+			<main>
+				<section class="card stat-card">
+					<span>Soil Moisture</span>
+					<h2>42%</h2>
+					<p
+						style="
+							color: var(--success);
+							font-weight: bold;
+							font-size: 0.85rem;
+						">
+						✓ Optimal
+					</p>
+				</section>
+
+				<section class="card stat-card">
+					<span>Live Orders</span>
+					<h2>28</h2>
+					<p
+						style="
+							color: var(--accent-clay);
+							font-weight: bold;
+							font-size: 0.85rem;
+						">
+						Pending
+					</p>
+				</section>
+				<section class="card stat-card">
+					<span>Weekly Yield</span>
+					<h2>1.4 Tons</h2>
+					<p
+						style="
+							color: var(--success);
+							font-weight: bold;
+							font-size: 0.85rem;
+						">
+						↑ 12%
+					</p>
+				</section>
+
+				<section class="card featured-chart">
+					<h3 style="margin-bottom: 1rem">Harvest Production Detail</h3>
+					<table class="data-table">
+						<thead>
+							<tr>
+								<th>Crop</th>
+								<th>Field</th>
+								<th>Status</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Potatoes</td>
+								<td>North Field B</td>
+								<td><span class="badge badge-critical">Sold Out</span></td>
+							</tr>
+							<tr>
+								<td>Cabbages</td>
+								<td>North Field A</td>
+								<td><span class="badge badge-success">Stored</span></td>
+							</tr>
+							<tr>
+								<td>Tomatoes</td>
+								<td>Greenhouse 1</td>
+								<td><span class="badge badge-success">Stored</span></td>
+							</tr>
+							<tr>
+								<td>Carrots</td>
+								<td>East Field B</td>
+								<td><span class="badge badge-success">Stored</span></td>
+							</tr>
+							<tr>
+								<td>Cassava</td>
+								<td>East Field A</td>
+								<td><span class="badge badge-warning">In Harvest</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section class="card inventory-list">
+					<h3>Stock Levels</h3>
+					<div class="stock-container">
+						<div class="stock-item">
+							<span>Fertilizer</span>
+							<span>20%</span>
+							<div class="progress-bar">
+								<div
+									style="
+										width: 20%;
+										height: 100%;
+										background: var(--accent-clay);
+										border-radius: 4px;
+									"></div>
+							</div>
+						</div>
+						<div class="stock-item">
+							<span>Livestock Feed</span>
+							<span>66%</span>
+							<div class="progress-bar">
+								<div
+									style="
+										width: 66%;
+										height: 100%;
+										background: var(--farm-green);
+										border-radius: 4px;
+									"></div>
+							</div>
+						</div>
+					</div>
+
+					<h3 style="border-top: 1px solid #eee; padding-top: 1rem">
+						Recent Activity
+					</h3>
+					<div style="display: grid; gap: 8px; font-size: 0.85rem">
+						<div>🛒 Order #4020 processed</div>
+						<div>🥛 Dairy pickup confirmed</div>
+						<div>🐄 A Large Draft of Cattle Trasported to MCBurger Food processing HQ</div>
+					</div>
+				</section>
+
+				<section class="card task-list">
+                <h3>Daily Farm Tasks</h3>
+                <div class="task-grid-internal">
+                    <div class="task-item">
+                        <strong>Morning Feed</strong>
+                        <p style="font-size: 0.8rem;">Check all livestock sectors.</p>
+                    </div>
+                    <div class="task-item" style="border-left-color: var(--accent-clay);">
+                        <strong>Irrigation Check</strong>
+                        <p style="font-size: 0.8rem;">Section D sensor low.</p>
+                    </div>
+                    <div class="task-item" style="border-left-color: var(--success);">
+                        <strong>Produce Sorting</strong>
+                        <p style="font-size: 0.8rem;">Prepare veg boxes.</p>
+                    </div>
+                </div>
+            </section>
+			</main>
+		</div>
+	  <footer>
+        <p>&copy; 2026</p>
+        <p>Created by APtech Farmers</p>
+        <small style="display: block;">Built by Passionate people</small><br>
+        <button style="background-color: rgba(15, 98, 15, 0.723); border-radius: 20px; padding: 10px; border: none; box-shadow: 1px 1px 5px 1px rgb(0, 0, 0);"><a href="/class/mini project/Farm/contactus.html" style="color: white; text-decoration: none;">Contact Us</a></button>
+    </footer>
+	</body>
+</html>

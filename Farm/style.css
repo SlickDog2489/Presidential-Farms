@@ -1,0 +1,251 @@
+:root{
+    --primary-green: #2d5a27;
+    --accent-orange: #e67e22;
+    --light-bg: #f9fbf9;
+    --dark-text: #333;
+    --white: #efff;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: rgb(175, 175, 175);
+}
+
+nav{
+    background-color: var(--white);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgb(171, 168, 168);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--primary-green);
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 20px;  /* new way of spacing elements with flex */
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: var(--dark-text); 
+    font-weight: 500;
+}
+
+.nav-links a:hover{
+    color: var(--primary-green);
+}
+
+.hero{
+    height: 60vh;
+    background: url(https://i.pinimg.com/736x/61/d2/f9/61d2f9631d0409d0a785c0a59f547317.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    padding: 0 20px;
+}
+
+.hero h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 2px black;
+}
+
+.btn{
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 20px;
+    box-shadow: 2px 3px 5px black;
+    margin-top: 20px;
+    transition: transform 0.3s;
+}
+
+.btn:hover{
+    transform: scale(1.04);
+}
+
+.container{
+    max-width: 110px;
+    margin: 40px auto;
+    padding: 0 20px;
+
+}
+
+.section-title{
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--primary-green);
+    text-shadow: #333 1px 1px 2px;
+}
+
+.product-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 10px;
+    justify-items: center;
+}
+
+.product-card {
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 3px 3px 4px gray;
+    overflow: hidden;
+    max-width: 350px;
+}
+
+.product-image{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(0.8);
+}
+
+.product-info{
+    padding: 10px;
+}
+
+.product-info h3{
+    margin-bottom: 12px;
+}
+
+img{
+    transition: transform 1s ,filter 1s;
+}
+img:hover{
+    transform: scale(1.1);
+    filter: grayscale(0);
+}
+
+li a:hover{
+            background-color: rgba(172, 164, 156, 0.385);
+            font-size: 17px;
+            border-radius: 20px;
+            box-shadow: 1px 1px 3px 0.5px rgba(0, 0, 0, 0.573);
+            padding: 10px 12px;
+            transform: scale(1.1);
+        }
+
+
+
+@media (max-width: 600px) {
+    nav{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .hero h1{
+        font-size: 2rem;
+    }
+}
+
+.table-container{
+    overflow-x: auto;
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px gainsboro;
+    border: 2px solid rgb(115, 64, 64);
+    border-collapse: collapse;
+}
+.price-container{
+    border: 2px solid rgb(115, 64, 64);
+    overflow-x: auto;
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px gainsboro;
+    border-collapse: collapse;
+}
+th, td{
+    text-align: left;
+    padding: 15px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+th{
+    background-color: var(--primary-green);
+    color: var(--white);
+
+}
+
+tr:hover{
+    background-color: #879b846e;
+}
+
+table{
+    width: 100%;
+}
+ 
+.status{
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-weight: bold
+}
+
+.ava{
+    background-color: #d4edda;
+    text-decoration: none;
+    color: black;
+}
+.ava:hover{
+    transition:  background-color 2s;
+    background-color: #83c67b;
+    cursor: pointer;
+}
+.sold:hover{
+    cursor:no-drop;
+}
+
+.sold{
+    background-color: rgba(166, 68, 68, 0.827);
+    text-decoration: none;
+    color: black;
+}
+
+.dashboard-btn{
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+    background-color: var(--primary-green);
+    padding: 12px;
+    margin-left: 9px;
+    border-radius: 8px;
+}
+
+.dashboard-btn:hover{
+    background-color: darkgreen;
+    box-shadow: 2px 2px 8px black;
+}
+footer{
+    background-color: var(--primary-green);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+footer p{
+    margin-top: 10px;
+    display: inline-block;
+}
